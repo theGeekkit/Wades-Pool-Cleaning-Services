@@ -1,0 +1,10 @@
+.mat-toolbar {
+  font-size: 45px;
+  /* font-family: ; */
+}
+
+.mat-icon {
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+}
