@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { ContactComponent } from './service/contact/contact.component';
+import { FeedbackComponent } from './service/feedback/feedback.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { ContactComponent } from './service/contact/contact.component';
     AppComponent,
     HeaderComponent,
     ContactComponent,
+    FeedbackComponent,
   ],
   imports: [
     BrowserModule,
