@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { ContactComponent } from './service/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
