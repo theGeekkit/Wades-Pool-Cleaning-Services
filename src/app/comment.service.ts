@@ -1,6 +1,6 @@
 import { Injectable, OnInit, Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { CommentModel } from './comment-model';
+import { Comment } from './comment-model';
 
 
 @Injectable({
@@ -12,14 +12,17 @@ export class CommentService implements OnInit{
 
   comments: Comment[] = [];
 
-  constructor() { }
+  constructor() {
+    this.commentForm = new FormGroup({
+      comment: new FormControl(),
+      name: new FormControl()
+    });
+   }
 
   commentForm!: FormGroup;
 
   ngOnInit(): void {
-    this.commentForm = new FormGroup({
-      comment: new FormControl(null)
-    })
+
   }
   onSubmit() {
     this.comments.push(this.commentForm.value);

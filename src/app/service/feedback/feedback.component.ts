@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormGroup, FormControl } from '@angular/forms';
+import { CommentService } from 'src/app/comment.service';
 
 @Component({
   selector: 'app-feedback',
@@ -10,7 +11,7 @@ export class FeedbackComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(public commentService: CommentService) { }
 
 
 
