@@ -14,9 +14,32 @@ span {
   margin-left: 12px;
   font-weight: bold;
 }
-button {
+
+button.example-icon.favorite-icon {
   color: azure;
-background-color: black;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  border: none;
+  padding: 0px;
+}
+
+button.example-icon {
+  color: azure;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  border: none;
+  padding: 0px;
+}
+
+button.menu {
+  color: azure;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  border: none;
+  padding: 0px;
 }
 
 #deadpool {
@@ -31,4 +54,26 @@ background-color: black;
   width: 80px;
   margin-right: auto;
   margin-left: 25px;
+}
+
+button.about {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+}
+
+button.home {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  margin-left: 25px;
+}
+
+button.services {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
 }
