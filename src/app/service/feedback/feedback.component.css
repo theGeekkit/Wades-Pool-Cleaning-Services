@@ -9,3 +9,9 @@ button {
   font-weight: 600;
   background-color: brown;
 }
+
+.mat-card.mat-focus-indicator.commentsCard {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
