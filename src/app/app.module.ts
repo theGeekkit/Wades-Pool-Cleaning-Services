@@ -12,6 +12,9 @@ import { FeedbackComponent } from './service/feedback/feedback.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
+import { AbouUsComponent } from './abou-us/abou-us.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,7 @@ import { MatTableModule } from '@angular/material/table';
     HeaderComponent,
     ContactComponent,
     FeedbackComponent,
+    AbouUsComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,9 @@ import { MatTableModule } from '@angular/material/table';
     MatIconModule,
     ReactiveFormsModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatDatepickerModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
