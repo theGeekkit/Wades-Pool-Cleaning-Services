@@ -23,9 +23,23 @@ display: table-column;
 div#contact {
   padding: 30px;
   margin-bottom: 75px;
+  display: row;
 }
 
 div.container {
   color: white;
   text-shadow: 2px 2px 2px rgb(247, 7, 7);
+}
+
+button#call {
+margin-left: 5px;
+font-size: 20px;
+font-weight: bold;
+background-color: rgba(165, 42, 42, 0.925);
+color: black;
+}
+
+.mat-form-field {
+  font-weight: bold;
+  font-size: 20px;
 }

@@ -16,6 +16,7 @@ import { AbouUsComponent } from './abou-us/abou-us.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { FormsModule } from '@angular/forms';
     MatDatepickerModule,
     MatFormFieldModule,
     FormsModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
