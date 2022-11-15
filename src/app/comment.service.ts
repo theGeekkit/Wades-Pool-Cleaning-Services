@@ -10,7 +10,7 @@ export class CommentService implements OnInit{
 
   comments: Comment[] = [
     {
-      comment: "Mister Wilson discretely rid me of my pool problems with ruthless effieciency", name: 'William Fisk'
+      comment: "Mister Wilson discretely rid me of my pool problems with ruthless efficiency", name: 'William Fisk'
     },
     {
       comment:'Wades pool cleaning service is the best around! Mister Wilson has helped me out many times', name:'Bob'
