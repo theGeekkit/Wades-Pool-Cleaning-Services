@@ -1,6 +1,18 @@
+h2 {
+  color: white;
+  text-shadow: 2px 2px 2px rgb(247, 7, 7);
+  font-size: 20px;
+  background-color: rgba(165, 42, 42, 0.459);
+  max-width: fit-content;
+}
+
 label {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  background-color: rgba(165, 42, 42, 0.842);
+  max-width: fit-content;
 
 }
 button {
@@ -15,6 +27,7 @@ button {
   font-size: 25px;
   max-width: 400px;
   background-color: rgba(165, 42, 42, 0.459);
+  line-height: 2rem;
 }
 
 h4 {

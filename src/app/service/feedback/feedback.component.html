@@ -11,8 +11,8 @@
         <input type="text" formControlName="name">
       </div>
     </div>
-    <button type="submit" id="commentSubmit" (click)="commentService.onSubmit()">Submit</button>
-    <div class="container" *ngIf="commentService.emptyList">
+    <button type="submit" id="commentSubmit" (click)="commentService.onSubmit(); ">Submit</button>
+    <div class="container">
       <mat-card class="commentsCard" *ngFor="let item of commentService.comments">
         {{ item.comment }} - {{ item.name }}
       </mat-card>
@@ -20,14 +20,4 @@
   </div>
 
 </form>
-<div class="column">
-  <h4>
-    Notable feedback
-  </h4>
-  <span id="fisk">
-    "Mister Wilson discretely rid me of my pool problems with ruthless effieciency" - William Fisk
-  </span>
-  <span id="bob">
-    "Wade's pool cleaning service is the best around! Mister Wilson has helped me out many times" - Bob
-  </span>
-</div>
+

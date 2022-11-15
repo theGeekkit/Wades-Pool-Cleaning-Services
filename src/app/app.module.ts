@@ -15,6 +15,8 @@ import { MatTableModule } from '@angular/material/table';
 import { AbouUsComponent } from './abou-us/abou-us.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatCardModule,
     MatTableModule,
     MatDatepickerModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,9 +8,14 @@ import { Comment } from './comment-model';
 })
 export class CommentService implements OnInit{
 
-  emptyList = false
-
-  comments: Comment[] = [];
+  comments: Comment[] = [
+    {
+      comment: "Mister Wilson discretely rid me of my pool problems with ruthless effieciency", name: 'William Fisk'
+    },
+    {
+      comment:'Wades pool cleaning service is the best around! Mister Wilson has helped me out many times', name:'Bob'
+    },
+  ];
 
   constructor() {
     this.commentForm = new FormGroup({
@@ -28,6 +33,6 @@ export class CommentService implements OnInit{
     this.comments.push(this.commentForm.value);
     console.log(this.comments)
     this.commentForm.reset()
-    this.emptyList = true
   }
+
 }
