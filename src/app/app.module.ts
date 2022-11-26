@@ -12,11 +12,13 @@ import { FeedbackComponent } from './service/feedback/feedback.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
-import { AbouUsComponent } from './abou-us/abou-us.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
+import { AuthComponent } from './auth/auth.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { MatNativeDateModule } from '@angular/material/core';
     HeaderComponent,
     ContactComponent,
     FeedbackComponent,
-    AbouUsComponent,
+    AboutUsComponent,
+    AuthComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,

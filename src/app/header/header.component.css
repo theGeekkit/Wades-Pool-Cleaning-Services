@@ -77,3 +77,18 @@ button.services {
   background-color: transparent;
   border: none;
 }
+
+li {
+  font-size: 25px;
+  marker: none;
+
+ }
+
+ form.input {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: right;
+  text-align: right;
+  align-items: flex-end;
+  }
