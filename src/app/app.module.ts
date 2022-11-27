@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { AuthComponent } from './auth/auth.component';
 import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { AdminComponent } from './admin/admin.component';
     AboutUsComponent,
     AuthComponent,
     AdminComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
