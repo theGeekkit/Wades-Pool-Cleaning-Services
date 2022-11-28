@@ -14,6 +14,12 @@ export class AuthService {
 
   public signIn(userData: User) {
     localStorage.setItem('ACCESS_TOKEN', "access_token");
+    this.isSubmitted = true;
+    if(this.authForm.invalid){
+      return;
+    }
+    this.authService.signIn(this.authForm.value);
+    this.router.navigateByUrl('/admin');
   }
   public isLoggedIn(){
     return localStorage.getItem('ACCESS_TOKEN') !== null;
@@ -23,20 +29,14 @@ export class AuthService {
   }
 
 
-  authForm: FormGroup;
+  authForm!: FormGroup;
   isSubmitted = false;
 
 
   get formControls() { return this.authForm.controls; }
 
-  signIn(){
-    this.isSubmitted = true;
-    if(this.authForm.invalid){
-      return;
-    }
-    this.authService.signIn(this.authForm.value);
-    this.router.navigateByUrl('/admin');
-  }
+
+
   ngOnInit() {
     this.authForm = this.formBuilder.group({
       email: ['', Validators.required],

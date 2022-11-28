@@ -78,17 +78,23 @@ button.services {
   border: none;
 }
 
-li {
-  font-size: 25px;
-  marker: none;
 
- }
+  .login {
+    position: absolute;
+    justify-content: right;
+    text-align: right;
+    margin-left: 86%;
+    margin-top: 0%;
+    height: 215px;
 
- form.input {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: right;
-  text-align: right;
-  align-items: flex-end;
+  }
+  p {
+    margin: 0;
+    font-size: 20px;
+    height: fit-content;
+  }
+  .submit {
+    position: absolute;
+    margin-left: 82%;
+    margin-top: -1%;
   }
